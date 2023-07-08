@@ -1,0 +1,22 @@
+1. 74 45 6e 28 d2 cf 92 3b 
+
+2. Cipher Suite: TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 (0xc02b)
+   Cipher Suite: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 (0xc02f)
+   Cipher Suite: TLS_DHE_RSA_WITH_AES_128_GCM_SHA256 (0x009e)
+   Cipher Suite: TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256 (0xcc14)
+
+3. dt.adsafeprotected.com
+
+4. 0b 09 bc b4 f1 fe e3 94
+
+5. Cipher Suite: TLS_RSA_WITH_AES_256_CBC_SHA (0x0035)
+
+6. Issued by - DigiCert High Assurance CA
+   Validity period - 2012-09-24 to 2015-09-29
+   8 Byes of public key - 30 82 01 0a 02 82 01 01 
+
+7. 8d 2c 47 8e 67 2d 4f f0
+
+8. 8e 9b 40 10 d1 6f 61 00
+
+9. 8b b9 8d a2 ca a5 d5 ea
