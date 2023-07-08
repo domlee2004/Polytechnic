@@ -1,0 +1,59 @@
+Object entity: Menu items
+
+Person entity: Driver, Customer
+
+Place entitiy: Restaurant
+
+Event entity: Payment, Order
+
+Attributes are characteristics that describes the entity
+
+e.g of attributes = order no., iterm ordered, qty ordered, contact no.,name
+
+Customer is the entity; customer ID, Name, Contact No, are the attributes
+
+Conceptual data model / Entity Relationship Digram(ER) ---> Relations(Logical data model)
+						       Map
+-----> Physical model(SQL Database)
+Create
+
+Files based system vs database system
+
+Filebased:
+Collection of application programs each managing its own data
+
+In an organization each dept has its own data files (not shared)
+
+Drawbacks: Duplication/wastage of storage, duplication of effort, 
+           may lead to unsynced files as if a shared data file is updated 
+           it has to be updated multiple times, Cannot share data/ combine data
+Databse:
+Different dept can share the data in the database; 1 Common database
+
+Database Application lifecycle:
+Database planning
+System def.
+analysis
+Database design (what we focus on)
+Implementation
+Testing
+Operational Maintainance
+
+Modelling (in context)
+From 3D to 2D (Real world to paper)
+
+Why do we need database:
+So that we can easily answer any questions. 
+Everything is organized.
+e.g. Who are the dentist I can consult?
+     When is patient P003 consultation?
+
+Week 7 submission for assignment checkpoint. Digram drawing
+Week 8 FTF quiz and ER modelling test
+Week 9 is common test
+Week 12 Mapping test
+Week 13 - 17 finish up assignment
+
+
+
+

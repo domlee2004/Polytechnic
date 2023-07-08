@@ -1,0 +1,17 @@
+1. SELECT * FROM staff c
+2. SELECT * FROM book c
+3. SELECT StaffID, Name, Gender FROM staff c
+4. SELECT ISBN, Title, PublisherID, BookCat FROM book c
+5. SELECT SupervisorID FROM staff c 
+6. SELECT DISTINCT SupervisorID FROM supervisor c
+7. SELECT BranchNo FROM member  
+8. SELECT DISTINCT BranchNo FROM member c
+9. SELECT ISBN, CopyNo, RentalRate, RentalRate * 0.98 AS 'New RentalRate' FROM bookcopy c 
+10.SELECT StaffID, Name, Salary, Salary * 1.1 AS 'New Salary' FROM staff c
+11.SELECT * FROM staff ORDER BY Name ASC c
+12.SELECT * FROM staff ORDER BY Name DESC c
+13.SELECT StaffID, ContactNo FROM staff ORDER BY StaffID ASC c
+14.SELECT Name, Salary FROM staff ORDER BY Salary DESC c
+15.SELECT * FROM bookcopy ORDER BY datein DESC c
+16.SELECT BranchNo, Name, Salary FROM staff ORDER BY BranchNo ASC, Name ASC c
+
