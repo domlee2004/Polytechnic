@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="bootstrap-4.6.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-4.6.1-dist/css/bootstrap-grid.min.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/NavFoot.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script src="js/navBar.js" defer></script>
+    <script src="js/index.js" defer></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <div w3-include-html="navBar.html"></div>
+            </div>
+        </div>
+        <div class="welcomeSection" id="container">
+            <p class="">Flip with us <br /> Discover a new </p>
+            <div class="text" id="text"></div><div id="cursor"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 introPara">
+                <p class="introHeader">KickFlip's Goals</p>
+                <p>
+                    Here at KickFlip we want to bring you the best of the skating world. We aim to make you
+                    fall deeply in love with skating and if we can't, at least make you a better skater.
+                    We guarantee that you will enjoy the people and products here and are confident that
+                    you will understand the meaning of skating as well as community better by joining us.
+                </p>
+                <button class="startButton" onclick="window.location.href = 'about.html';">Learn More</button>
+            </div>
+        </div>
+    </div>
+    <!--        Footer is like an entity of its own. So use class container -->
+    <div w3-include-html="footer.html"></div>
+
+    <script>
+        w3.includeHTML();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <script src="bootstrap-4.6.1-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

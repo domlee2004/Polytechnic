@@ -1,0 +1,144 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,300;1,300;0,400;0,700;1,400;1,700&display=swap');
+
+::-webkit-scrollbar {
+    width: 0px !important;
+}
+
+nav, header, footer {
+    display: block;
+}
+
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #eee;
+    text-rendering: optimizeSpeed;
+    min-height: 100vh;
+    line-height: 1;
+    margin: 0;
+}
+
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+#cursor {
+    display: inline-block;
+    vertical-align: middle;
+    width: 3px;
+    height: 50px;
+    background-color: orange;
+    animation: ease .5s step-end infinite;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+}
+
+@keyframes blink {
+    from, to {
+        background-color: transparent;
+    }
+
+    50% {
+        background-color: orange;
+    }
+}
+
+.welcomeSection {
+    padding: 15% 10%;
+    text-align: left;
+    font-family: 'Manrope', 'serif';
+    height: 100vh;
+    background-color: #eee;
+}
+
+    .welcomeSection p {
+        width: 100%;
+        color: #91C483;
+        margin-bottom: 40px;
+        font-size: 70px;
+        font-weight: 300;
+        white-space: nowrap;
+    }
+
+
+.text {
+    font-family: 'Caveat', 'Lato';
+    font-size: 100px;
+    font-weight: 600;
+    display: inline-block;
+    vertical-align: middle;
+    color: #e91e63;
+    letter-spacing: 2px;
+}
+
+/*@media(max-height: 480px){
+    #cursor{
+        margin-bottom: 30%;
+    }
+}*/
+
+@media (min-width:700px) and (max-width: 1300px) {
+    .welcomeSection{
+        padding-top: 25%;
+    }
+}
+
+@media (max-width: 600px){
+    .welcomeSection{
+        padding-top: 32%;
+    }
+}
+
+.introPara{
+    text-align: center;
+    padding: 10% 10% 7%;
+    background-color: #FFE162;
+    font-family: 'Poppins', serif;
+    line-height: 1.7;
+}
+
+    .introPara .introHeader {
+        color: #E91E63;
+        font-family: 'Caveat';
+        font-size: 32px;
+        letter-spacing: 1px;
+        margin-bottom: 5px;
+    }
+
+    .introPara p {
+        text-align: left;
+        color: #000;
+        margin: 0 18% 0 18%;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .introPara .startButton {
+        margin-top: 70px;
+        border-radius: 5px;
+        color: #FF8BA0;
+        padding: 10px 20px;
+        font-weight: 500;
+        border: 3px solid #FF8BA0;
+        background: transparent;
+        transition: 0.3s ease-in-out;
+    }
+
+    .introPara .startButton:hover{
+        transform: scale(1.05);
+        color: #E91E63;
+        border-color: #E91E63;
+    }
+

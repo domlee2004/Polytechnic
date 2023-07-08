@@ -1,0 +1,371 @@
+﻿/* MAIN CSS FOR COACHING */
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cantata+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+body {
+    margin: auto;
+    color: white;
+}
+
+/* CSS FOR LANDING INTRO */
+.landing-intro {
+    margin-top: 6rem;
+    font-weight: 700;
+    font-family: Manrope;
+    font-size: 20px;
+}
+
+/* .landing-intro FOR TABLETS AND BELOW */
+@media only screen and (max-width: 768px) {
+    .landing-intro {
+        margin-top: 10px;
+        font-weight: 700;
+        font-family: Manrope;
+        font-size: 20px;
+        margin-right: 50px;
+    }
+}
+
+.landing-intro-background-color {
+    background: #24262b;
+    padding-top: 30px;
+    padding-bottom: 45px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: Manrope;
+}
+
+.landing-intro-content {
+    margin-left: 60px;
+    margin-bottom: -10px;
+    font-weight: 700;
+    font-family: Manrope;
+    font-size: 20px;
+}
+
+    .landing-intro-content h3 {
+        margin-top: -10px;
+        color: #FF6464;
+    }
+
+/* CSS FOR BOOK NOW ANCHOR BUTTON */
+.book-button {
+    color: #24262b;
+    border-color: white;
+    border-radius: 15px;
+    border-width: 3px;
+    margin: 10px;
+    background-color: white;
+    font-weight: bold;
+    font-family: Manrope;
+}
+
+/* CSS FOR CAROUSEL */
+.carousel {
+    border-radius: 25px;
+    overflow: auto;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+
+/* CSS FOR COACH TEAM INTRO HEADER */
+.table-intro2-h1 {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 60px;
+    font-size: 50px;
+    font-family: Manrope;
+}
+
+/* CSS FOR COACH TEAM INTRODUCTION */
+
+.single-team {
+    padding-bottom: 70px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+.team-img {
+    position: relative;
+    z-index: 5;
+    overflow: hidden;
+}
+
+    .team-img img {
+        width: 100%;
+        transition: .3s;
+    }
+
+.single-team:hover .team-img img {
+    transform: scale(1.1);
+}
+
+.team-content {
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    overflow: hidden;
+    bottom: 0;
+    transition: all .4s;
+    background: #FF6464;
+    z-index: 5;
+}
+
+.single-team:hover .team-content {
+    height: 170px;
+}
+
+.team-info {
+    padding: 5px 20px 5px 20px;
+    transition: all .5s;
+}
+
+.single-team:hover .team-content {
+    background: #000;
+}
+
+.single-team .team-content .team-info h3 {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 20px;
+    margin: 5px;
+}
+
+.single-team:hover .team-info h3 {
+    color: #FF6464;
+}
+
+.team-info p {
+    margin-top: 15px;
+    color: #fff;
+}
+
+.single-team-text p {
+    margin-top: 5px;
+}
+
+.team-text {
+    color: #fff;
+    padding: 0 10px 5px;
+}
+
+/* CSS FOR TABLE INTRODUCTION */
+.table-intro-hr {
+    border-color: #FF6464;
+    align-items: center;
+    width: 260px;
+    font-weight: 700;
+    font-family: Manrope;
+}
+.table-intro-h1 {
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 60px;
+    font-size: 50px;
+    font-family: Manrope;
+}
+
+/* CSS FOR TABLE */
+.content-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 23px;
+    min-width: 300px;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    align-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-family: Manrope;
+}
+    .content-table caption{
+        text-align: center;
+        color: black;
+    }
+
+    .content-table thead tr {
+        background-color: #FF6464;
+        color: #ffffff;
+        /* text-align: left; */
+        font-weight: bold;
+    }
+
+    .content-table th,
+    .content-table td {
+        padding: 12px 15px;
+        text-align: center;
+        color: black;
+    }
+
+    .content-table tbody tr {
+        border-bottom: 1px solid #dddddd;
+    }
+
+        .content-table tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+
+        .content-table tbody tr:last-of-type {
+            border-bottom: 2px solid #FF6464;
+        }
+
+        .content-table tbody tr.active-row {
+            font-weight: bold;
+            color: #FF6464;
+        }
+
+/* CSS FOR TABLE ON MOBILE */
+@media only screen and (max-width: 600px) {
+    .content-table {
+        border-collapse: collapse;
+        margin: 25px 0;
+        font-size: 13px;
+        min-width: 300px;
+        border-radius: 5px 5px 0 0;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+        align-content: center;
+        align-items: center;
+        font-weight: 700;
+        font-family: Manrope;
+    }
+
+        .content-table caption {
+            text-align: center;
+            color: black;
+        }
+
+        .content-table thead tr {
+            background-color: #FF6464;
+            color: #ffffff;
+            /* text-align: left; */
+            font-weight: bold;
+        }
+
+        .content-table th,
+        .content-table td {
+            padding: 12px 15px;
+            text-align: center;
+            color: black;
+        }
+
+        .content-table tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+
+            .content-table tbody tr:nth-of-type(even) {
+                background-color: #f3f3f3;
+            }
+
+            .content-table tbody tr:last-of-type {
+                border-bottom: 2px solid #FF6464;
+            }
+
+            .content-table tbody tr.active-row {
+                font-weight: bold;
+                color: #FF6464;
+            }
+}
+
+/* CSS FOR FORM */
+.form-box {
+    border-style: solid;
+    border-radius: 25px;
+    border-block-color: #FF6464;
+    margin-top: 70px;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    margin-bottom: 70px;
+    display: inline-block;
+    color: #FF6464;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    font-weight: 700;
+    font-family: Manrope;
+}
+    .form-box select, input, textarea {
+        border-radius: 15px;
+        border: 2px solid lightgrey;
+        padding: 10px;
+        width: 200px;
+        margin-left: 10px;
+        margin-right: 10px;
+        color: black;
+    }
+    .form-box legend{
+        color: black;
+        font-weight: bold;
+        margin-left: 10px;
+        font-size: 4vmin;
+    }
+    .form-box h1 {
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        color: black;
+        font-weight: bold;
+        font-size: 50px;
+    }
+    @media only screen and (max-width: 600px) {
+        .form-box h1 {
+            text-align: center;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            color: black;
+            font-weight: bold;
+            font-size: 30px;
+        }
+    }
+    .form-box label {
+        text-align: left;
+        color: black;
+        margin-left: 10px;
+        font-size: 20px;
+    }
+
+    .form-box align-right-inputs {
+        float: left;
+        margin-right: 100px;
+    }
+
+    .form-box hr {
+        border-color: #FF6464;
+        margin-top: -10px;
+        width: 100px;
+        border-collapse: collapse;
+        margin-bottom: 50px;
+    }
+
+    /* SUBMIT AND RESET INPUT BUTTON STYLES */
+    .form-buttons {
+        color: #24262b;
+        border-color: lightgrey;
+        border-radius: 12px;
+        border-width: 3px;
+        background-color: white;
+        font-weight: bold;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+        padding-bottom: 5px;
+        padding-top: 5px;
+        width: 125px;
+        font-family: Manrope;
+    }
+
+    /* FINALMESSAGE OUTPUT STYLES */
+    .finalmessage-output {
+        text-align: center;
+        font-weight: 700;
+        font-family: Manrope;
+    }

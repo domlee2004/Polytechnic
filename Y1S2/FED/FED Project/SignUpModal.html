@@ -1,0 +1,71 @@
+﻿<div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="signUpLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="formSection">
+                <form id="form" class="form" action="#">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="formHeading">
+                        <p>Join us</p>
+                    </div>
+                    <div class="user-details">
+                        <div class="input-box">
+                            <span class="details">Full Name</span>
+                            <input id="name" type="text" placeholder="Enter your name" required />
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Username</span>
+                            <input id="username" type="text" placeholder="Enter your username" required />
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Email</span>
+                            <input id="email" type="email" placeholder="Enter your email" required />
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Phone Number</span>
+                            <input id="number" type="text" pattern="[0123456789?][0-9]+" placeholder="Enter your number" required />
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Password</span>
+                            <input id="password" type="password" placeholder="Enter your password" required />
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Confirm Password</span>
+                            <input id="cfmpassword" type="password" placeholder="Confirm password" required />
+                        </div>
+                    </div>
+                    <div class="gender-details">
+                        <input type="radio" name="gender" id="dot-1" />
+                        <input type="radio" name="gender" id="dot-2" />
+                        <input type="radio" name="gender" id="dot-3" />
+                        <span class="gender-details-title">Gender</span>
+                        <div class="category">
+                            <label for="dot-1">
+                                <span class="dot one"></span>
+                                <span class="gender">Male</span>
+                            </label>
+                            <label for="dot-2">
+                                <span class="dot two"></span>
+                                <span class="gender">Female</span>
+                            </label>
+                            <label for="dot-3">
+                                <span class="dot three"></span>
+                                <span class="gender">Prefer not to say</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div onclick="submit()" class="button" data-keyword="false"data-backdrop="static">
+                        <input type="submit" value="Sign Up" />
+                    </div>
+                    <div class="button">
+                        <input onclick="resetForm()" id="reset" type="reset" value="Reset" data-backdrop="static" />
+                    </div>
+                    <div id="thank_you">
+                        <p></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

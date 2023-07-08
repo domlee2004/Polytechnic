@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    
+    <title>Comments</title>
+</head>
+<body>
+    <div id="results"></div>
+    <a href="article.html">Back to Article</a>
+    <a href="blog.html">Back to Blog</a>
+    <script>
+        const resultsList = document.getElementbyId('results')
+        newURLSearchParams(window.location.search).forEach((value,name) => 
+        {
+            resultsList.append(${name}: ${value}`
+            resultsList.append(document.createElement('br'))
+
+        })
+    
+    </script>
+
+</body>
+</html>

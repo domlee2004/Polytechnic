@@ -1,0 +1,233 @@
+﻿/*new shit i added*/
+
+body {
+    background-color: #24262b!important;
+}
+
+.centerheader {
+    text-align: center;
+    font-family: 'Poppins', 'Manrope', sans-serif;
+    background: #24262b;
+    color: white;
+}
+
+.carouseller {
+    color: #24262b;
+    background-color: #24262b;
+    padding-bottom: 50px;
+}
+
+.breaker {
+    text-align: center;
+    font-family: 'Poppins', 'Manrope', sans-serif;
+    background: #24262b;
+    color: white;
+    margin: 0px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.spacer {
+    line-height: 1.6;
+}
+
+
+/*animation*/
+.content p {
+    display: inline;
+    background-repeat: no-repeat;
+    transition: all 500ms ease-in-out;
+}
+
+.container h1 {
+    font-size: 2.2rem;
+}
+
+.container .instruction {
+    font-size: 1.8rem;
+    margin-bottom: 4rem;
+    font-style: italic;
+}
+
+.content {
+    margin-bottom: 4em;
+}
+
+    .content p {
+        display: inline;
+        background-repeat: no-repeat;
+        transition: all 500ms ease-in-out;
+    }
+
+.v1 p {
+    background-position: bottom left;
+    background-size: 0% 5px;
+    background-image: linear-gradient(#ec1c64, #ec1c64);
+    padding-bottom: 5px;
+}
+
+.v1:hover p {
+    background-size: 100% 5px;
+}
+
+.v2 p {
+    background-position: left;
+    background-size: 0% 100%;
+    background-image: linear-gradient(#ec1c64, #ec1c64);
+}
+
+.v2:hover p {
+    background-size: 100% 100%;
+}
+
+.v3 p {
+    color: transparent;
+    background-position: right;
+    background-size: 100% 100%;
+    background-image: linear-gradient(#ec1c64, #ec1c64);
+}
+
+.v3:hover p {
+    color: #000;
+    background-size: 0% 100%;
+}
+
+.v4 p {
+    background-position: bottom left;
+    background-size: 0% 3px;
+    background-image: repeating-linear-gradient(to right, #4834d4 0 3px, transparent 0 6px);
+    padding-bottom: 3px;
+}
+
+.v4:hover p {
+    background-size: 100% 3px;
+}
+
+.v5 p {
+    background-position: center left;
+    background-size: 100% 3px;
+    background-image: linear-gradient(to right, #000, #000);
+    padding-bottom: 3px;
+}
+
+.v5:hover p {
+    background-size: 100% 100%;
+    color: #fff;
+    background-image: linear-gradient(to right, #e53e3e, #e53e3e);
+}
+
+.v6 p {
+    background-position: center left;
+    background-size: 100% 4px;
+    background-image: linear-gradient(to right, #000, #000);
+    padding-bottom: 4px;
+}
+
+.v6:hover p {
+    background-position: bottom left;
+    background-size: 100% 2px;
+    font-style: italic;
+}
+
+.v7 p {
+    background-position: left;
+    background-size: 0% 100%;
+    background-image: linear-gradient(to right, #f6e05e, #f6e05e);
+}
+
+.v7:hover p {
+    background-position: right;
+    background-size: 100% 100%;
+}
+
+.v8 p {
+    background-position: left;
+    background-size: 0% 100%;
+    background-image: linear-gradient(to right, #9ae6b4, #f6e05e);
+    padding-bottom: 4px;
+    box-decoration-break: clone;
+}
+
+.v8:hover p {
+    background-size: 100% 100%;
+}
+/*table*/
+table {
+    width: 75%;
+    overflow: hidden;
+    font-family: 'Poppins', 'Manrope', sans-serif;
+    text-align: center;
+    color: #24262b
+}
+
+
+
+tr, th, td {
+    border: thin solid #ec1c64;
+    padding: 10px;
+    background-color: #24262b;
+    color: white;
+}
+
+
+
+.tablecenter {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+
+/*style for Task 4*/
+#pizzaform {
+    padding: 5px 10px;
+    border: 10px solid #ec1c64;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #24262b;
+    color: white;
+}
+
+
+
+#addOns {
+    margin-left: 300px;
+    display: inline-block;
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+    margin-left: 20px;
+}
+
+label, select {
+    width: 120px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+fieldset {
+    border-radius: 10px;
+}
+
+input {
+    vertical-align: top;
+}
+
+#totalPrice {
+    padding: 10px;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+#finalMessage {
+    display: inline;
+    width: 300px;
+    color: white;
+    font-weight: bold;
+}
+
+
