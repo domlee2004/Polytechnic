@@ -1,0 +1,19 @@
+When performing Basic Dynamic Analysis
+1. Go to control panel check networkconnection -> LAN -> Properties -> TCP/IP -> Properties -> Set DNS to local host
+2. This is to fake a network. Otherwise the malware might not run
+3. Set DNS Reply Address using Apate DNS to 127.0.0.1 and start the server
+4. Start your different software (pe, pm, nc) Netcat listen to traffic on port 80 (http) and 443(https)
+5. Regshot (Take 1 before running malware, 1 after and compare). Often times must look at files added or modified
+6. MD5 hash to compare files
+7. Look back at APATE DNS and Netcat -> (See traffic and DNS requests)
+8. Analyze process explorer (View -> Lower Pane View -> Handles/DLL) -> Check for mutex and DLLs files (if it was packed)
+8.b Analyze strings of process by going to properties of the process. 
+9. Process monitor (must filter processes e.g. by name) 
+
+
+Tools Used:
+1. ApateDNS
+2. Process Explorer
+3. Process Monitor
+4. Regshot
+5. WinMD5 (in static analysis)

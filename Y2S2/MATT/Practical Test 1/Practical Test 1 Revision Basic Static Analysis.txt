@@ -1,0 +1,41 @@
+Timestamp to know how recent the malware is
+
+Old indicates higher possibility of malware being detected by AV
+
+New indicates otherwise.
+
+Packing is used to make static analysis of malware difficult by malware authors
+
+Makes analyst have to unpack or perform basic dynamic analysis (Run the malware)
+
+Entrypoint indicates memory address which the programme starts in memory
+
+These are 2 indicators of compromise Network and Host-based.
+
+Hostbased Indicators 	- New process/service/thread (e.g. mutex) created, file del, file created, 
+				- file modified
+	   			- Registry CRUD too (Impt for persistance and configuration)
+
+* CreateMutex CreateProcess e.g. of Hostbased indicator functions
+* CreateFile & CreateDir either creates or opens an existing one 
+* W at end of function = unicode (all foreign languages) A = Ascii (only english)
+
+Network Indicators      - Connecting to URL, IP address. 
+				- Creating socket, connecting to a port
+				- Functions such as RPC, WinInet, WS2, IP addresses
+Dependency Walker
+- Look from highest to lowest level. 
+
+Bintext
+- Look for mispelled/funny looking strings
+- Look for references to dll files as they might be linked 
+
+* Exported Functions and functions that other programmes can import
+* Imported functions are the functions that the malware will be using
+* ADVAPI has your registry related functions
+
+Tools Used 
+1. PEView
+2. PEID
+3. Bintext
+4. Dependency walker

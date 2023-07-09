@@ -1,0 +1,161 @@
+Lab 1-1
+
+Questions
+1. Upload the files to http://www.VirusTotal.com/ and view the reports. Does
+either file match any existing antivirus signatures?
+
+2. When were these files compiled?
+
+3. Are there any indications that either of these files is packed or obfuscated?
+If so, what are these indicators?
+
+4. Do any imports hint at what this malware does? If so, which imports
+are they?
+
+5. Are there any other files or host-based indicators that you could look for
+on infected systems?
+
+6. What network-based indicators could be used to find this malware on
+infected machines?
+
+7. What would you guess is the purpose of these files?
+
+Answers:
+
+1. These files were written specifically for this book, so as of this writing,
+you should not find a signature for them on VirusTotal.com. Of course, if
+these files become part of the antivirus signatures as a result of the publication of this book, the results will be different.
+
+2. Both files were compiled on December 19, 2010, within 1 minute of each
+other.
+
+3. There are no indications that either file is packed or obfuscated.
+
+4. The interesting imports from Lab01-01.exe are FindFirstFile, FindNextFile,
+and CopyFile. These imports tell us that the program searches the filesystem and copies files. The most interesting imports from Lab01-01.dll
+are CreateProcess and Sleep. We also see that this file imports functions
+from WS2_32.dll, which provides network functionality.
+
+5. Examine C:\Windows\System32\kerne132.dll for additional malicious activity. Note that the file kerne132.dll, with the number 1 instead of the letter
+l, is meant to look like the system file kernel32.dll. This file can be used as
+a host indicator to search for the malware.
+
+6. The .dll file contains a reference to local IP address 127.26.152.13. This
+address is an artifact of this program having been created for educational
+and not malicious purposes. If this was real malware, the IP address should
+be routable, and it would be a good network-based indicator for use in
+identifying this malware.
+
+7. The .dll file is probably a backdoor. The .exe file is used to install or run
+the DLL.
+
+Lab 1-2
+
+Questions
+
+1. Upload the Lab01-02.exe file to http://www.VirusTotal.com/. Does it match
+any existing antivirus definitions?
+
+2. Are there any indications that this file is packed or obfuscated? If so,
+what are these indicators? If the file is packed, unpack it if possible.
+
+3. Do any imports hint at this program’s functionality? If so, which imports
+are they and what do they tell you?
+
+4. What host- or network-based indicators could be used to identify this
+malware on infected machines?
+
+Answers:
+
+1. As of this writing, the file matches 3 of 41 antivirus signatures.
+
+2. There are several indications that the program is packed with UPX. You
+can unpack it by downloading UPX and running upx –d.
+
+3. After unpacking the file, you’ll see that the most interesting imports are
+CreateService, InternetOpen, and InternetOpenURL.
+
+4. You should check infected machines for a service called Malservice and
+for network traffic to http://www.malwareanalysisbook.com/
+
+Lab 1-3
+
+Questions
+1. Upload the Lab01-03.exe file to http://www.VirusTotal.com/. Does it match
+any existing antivirus definitions?
+2. Are there any indications that this file is packed or obfuscated? If so,
+what are these indicators? If the file is packed, unpack it if possible.
+3. Do any imports hint at this program’s functionality? If so, which imports
+are they and what do they tell you?
+4. What host- or network-based indicators could be used to identify this
+malware on infected machines?
+
+
+Lab 1-4
+
+Questions
+1. Upload the Lab01-04.exe file to http://www.VirusTotal.com/. Does it match
+any existing antivirus definitions?
+2. Are there any indications that this file is packed or obfuscated? If so,
+what are these indicators? If the file is packed, unpack it if possible.
+3. When was this program compiled?
+4. Do any imports hint at this program’s functionality? If so, which imports
+are they and what do they tell you?
+5. What host- or network-based indicators could be used to identify this
+malware on infected machines?
+6. This file has one resource in the resource section. Use Resource Hacker
+to examine that resource, and then use it to extract the resource. What
+can you learn from the resource?
+
+
+
+
+
+
+
+
+
+
+
+
+Lab 3-1
+Analyze the malware found in the file Lab03-01.exe using basic dynamic analysis tools.
+Questions
+1. What are this malware’s imports and strings?
+2. What are the malware’s host-based indicators?
+3. Are there any useful network-based signatures for this malware? If so,
+what are they?
+Lab 3-2
+Analyze the malware found in the file Lab03-02.dll using basic dynamic analysis tools.
+Questions
+1. How can you get this malware to install itself?
+2. How would you get this malware to run after installation?
+3. How can you find the process under which this malware is running?
+4. Which filters could you set in order to use procmon to glean
+information?
+5. What are the malware’s host-based indicators?
+6. Are there any useful network-based signatures for this malware?
+Lab 3-3
+Execute the malware found in the file Lab03-03.exe while monitoring it using
+basic dynamic analysis tools in a safe environment.
+Questions
+1. What do you notice when monitoring this malware with Process
+Explorer?
+2. Can you identify any live memory modifications?
+3. What are the malware’s host-based indicators?
+4. What is the purpose of this program?
+Lab 3-4
+Analyze the malware found in the file Lab03-04.exe using basic dynamic analysis tools. (This program is analyzed further in the Chapter 9 labs.)
+Questions
+1. What happens when you run this file?
+2. What is causing the roadblock in dynamic analysis?
+3. Are there other ways to run this program?
+
+1. The malware appears to be packed. The only import is ExitProcess,
+although the strings appear to be mostly clear and not obfuscated.
+2. The malware creates a mutex named WinVMX32, copies itself into C:\
+Windows\System32\vmx32to64.exe. and installs itself to run on system
+startup by creating the registry key HKLM\SOFTWARE\Microsoft\Windows\
+CurrentVersion\Run\VideoDriver set to the copy location.
+3. The malware beacons a consistently sized 256-byte packet containing
+seemingly random data after resolving www.practicalmalwareanalysis.com
