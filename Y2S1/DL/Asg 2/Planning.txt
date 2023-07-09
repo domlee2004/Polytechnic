@@ -1,0 +1,15 @@
+1. Test RNN layers (LSTM, BILSTM, GRU, Conv1D) 4 -> Instantly choose 2
+
+2. RNN layers 4
+
+3. Dense layers 4
+
+4. Weight Normalization / Layer normalization (Either) 1
+
+5. Learning Rate 3
+
+6. Dropout 3
+
+7. Regularizers 3
+
+* Summary table for problem 1

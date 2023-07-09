@@ -1,0 +1,14 @@
+Data pre-processing 
+
+1. Load Data
+2. Convert_Emojis to relevant word it represents
+3. Remove emoticons
+4. Remove all reviews containing non-alphabet languages (Chinese)
+5. Removing all reviews that are null
+6. Lowercasing all words in the text and removing the tags
+7. Converting the text to list (AA Tokenization) 
+8. Removing stopwords
+9. Lemmatizing the text
+10. Joining the words back together for model input
+11. Create word_index using tokenizer & padding sequences (DL tokenization)
+12. Converting labels from range 1 - 5 to 0 - 4. This way model can accept inputs properly
