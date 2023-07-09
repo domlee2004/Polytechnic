@@ -1,0 +1,22 @@
+1 more reconaissance tool
+
+Configuring Context
+
+1. ContextName
+
+2. Form-Based Authentication
+
+3. Select Target URL (same as Include in Context)
+
+4. Select password for password parameter
+
+5. Add user with password. This will be used for login
+
+6. Click enable all after
+
+7. Select Regex to flag as context (Logged-out indicator)
+
+8. Enable Forced User mode 
+
+9. Ready to Spider
+

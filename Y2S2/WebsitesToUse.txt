@@ -1,0 +1,20 @@
+Week 7
+- Arbitrary File Access (bWAPP)
+- Directory Listing (bWAPP, dvwa)
+- Unrestricted File Upload Due to Security Misconfiguration (bWAPP)
+
+Week 6
+- XSS exploitation using Beef, Stored XSS (Mutillidae, bWAPP)
+
+Week 4.2 
+- OS Command Injection (bWAPP, dvwa)
+- Manual Exploitation normal commands
+- Manual Exploitation Spawning reverse shell
+- Automated Exploitation of OS (Commix)
+
+- HTML Injection Stored and Post (dvwa, bWAPP)
+
+Week 4.1
+-Authenticated Vulnerability Scan (dvwa, wordpress)
+
+IP Address = 192.168.184.137
